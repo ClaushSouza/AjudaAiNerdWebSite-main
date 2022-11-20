@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manutenção</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+    <!-- nav bar, junto com menu hamburguer -->
+    <header>
+      <nav>
+        <a class="logo" href="index.html">Ajuda Ai Nerd</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main></main> <!-- essa main ela está pegando a foto de fundo do background -->
+    <!-- fim da nav bar  -->
+
+    <!-- começo do carrossel -->
+    <div class="content">
+      <input type="radio" name="slide" id="slide1">
+      <input type="radio" name="slide" id="slide2">
+
+      <div class="slide s1">
+        <img src="tecnico-em-informatica.jpg" alt="" checked>
+      </div>
+      <div class="slide2">
+        <img src="tecnico1.png" alt="">
+      </div>
+
+      <div class="navigation">
+        <label class="bar" for="slide1">Foto 1</label>
+        <label class="bar" for="slide2">Foto 2</label>
+      </div>
+    </div>
+    <!-- fim do carrosel -->
+
+    <!-- menu hamburguer javascript -->
+    <script src="mobile-menu.js"></script>
+    <!-- fim do menu hamburguer -->
+  </body>
+</html>
