@@ -42,3 +42,18 @@ const mobileNavbar = new MobileNavbar(
     ".nav-list li",
 );
 mobileNavbar.init();
+
+
+const slides = document.querySelectorAll('.slide');
+const bars = document.querySelectorAll('.bar');
+let currentSlide = 0;
+
+function nextSlide() {
+  slides[currentSlide].classList.remove('s1');
+  bars[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add('s1');
+  bars[currentSlide].classList.add('active');
+}
+
+setInterval(nextSlide, 5000);
